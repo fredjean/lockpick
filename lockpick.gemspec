@@ -8,15 +8,18 @@ Gem::Specification.new do |spec|
   spec.version       = Lockpick::VERSION
   spec.authors       = ["Frederic Jean"]
   spec.email         = ["fred@fredjean.net"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{pulls ssh public keys from GitHub and populates authorized_keys}
+  spec.summary       = %q{pulls ssh public keys from GitHub and populates authorized_keys}
+  spec.homepage      = "https://github.com/fredjean/lockpick"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
+
+  spec.add_dependency "main"
+  spec.add_dependency "httparty"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
