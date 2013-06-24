@@ -1,4 +1,4 @@
-#! /usr/bin/env ruby
+#!/usr/bin/env ruby
 #
 # Pulls the public keys from the members of one or more team on GitHub and
 # populates the ~/.ssh/authorized_keys for the user running the script.
