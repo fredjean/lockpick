@@ -22,6 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "map"
   spec.add_dependency "pry"
   spec.add_dependency "github_api"
+  spec.add_dependency "arrayfields", '~> 4.7.4'
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "librarian-chef"
