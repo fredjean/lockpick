@@ -1,0 +1,20 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apt (2.0.0)
+    build-essential (1.4.0)
+    ruby_build (0.8.0)
+
+GIT
+  remote: git://github.com/fnichol/chef-rbenv.git
+  ref: master
+  sha: 9afb4e5da2e6212504a12de3bbbd410cd96100f6
+  specs:
+    rbenv (0.7.3)
+
+DEPENDENCIES
+  apt (>= 0)
+  build-essential (>= 0)
+  rbenv (>= 0)
+  ruby_build (>= 0)
+
