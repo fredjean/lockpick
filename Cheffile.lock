@@ -4,6 +4,7 @@ SITE
     apt (2.0.0)
     build-essential (1.4.0)
     ruby_build (0.8.0)
+    vim (1.0.2)
 
 GIT
   remote: git://github.com/fnichol/chef-rbenv.git
@@ -17,4 +18,5 @@ DEPENDENCIES
   build-essential (>= 0)
   rbenv (>= 0)
   ruby_build (>= 0)
+  vim (>= 0)
 
