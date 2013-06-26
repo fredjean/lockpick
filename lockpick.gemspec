@@ -13,7 +13,9 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/fredjean/lockpick"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files`.split($/)
+  spec.files         = `git ls-files`.split($/).reject do |f|
+    %w(Cheffile Cheffile.lock Vagrantfile upgrade-chef.sh).include?(f)
+  end
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
