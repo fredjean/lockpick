@@ -1,6 +1,16 @@
 # Lockpick
 
-Allowing SSH access to the members of a GitHub team.
+Allowing SSH access to the members of a GitHub team. 
+
+## Overview
+
+This script leverages GitHub's public key management as a tool to manage public ssh keys. 
+
+This makes the following assumptions:
+
+1. You trust the developers/individuals that have access to your code in GitHub to also have access to the servers running said code. You have much deeper problems if you dont...
+2. You trust that managing verified public key on GitHub is properly secure.
+3. The keys hosted on GitHub represent the identity of your developers and operations team.
 
 ## Installation
 
