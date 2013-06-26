@@ -27,7 +27,7 @@ All you need to do to run the lockpick script:
 
 You can also use cron to run it periodically. Adding the following line to your crontab:
 
-    5 * * * * 
+    5 * * * * /usr/local/rbenv/shims/lockpick
 
 ## First Run
 
@@ -35,6 +35,13 @@ The script uses [Ara's Main](https://github.com/ahoward/main) gem to run. It wil
 configuration:
 
 ```ruby
+github:
+  token: "github oauth token"
+  org: myorg
+  team_ids:
+    - 123456
+default_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAyflVzdA6S6DUFs4FVID+AJ6xf6125crlB1BlacmPe+Zq25PgaVGPC9L4SlZqEkkK5NOZjhTGnoH6r33Bdb+vECh5rRxn0s37hZI1ayVtjUudaKTZD09JQSKq1q1NOno5NhOAivh1SSqwmFBpPzlo1N1YfW+HphPSkAfHgxP2bZUdvQJTK9l1WlQy2UaMEREL3G/0yfFUnOew3GfHU/B4oHYxjGN41Q/WBQ4pxSGMo5zYufKyrQqKFR+Zsdq6GN4QgwAJzS09EPZXADHyJoZ2wwJuQozQtlLxp2z5YhNTJqQVAJnswLWf/I5oKQV9wgqcQ9OfywUKynweHdPsDyXGpQ== dojo4@dojo4.com
 ```
 
 It will then proceed to pull the keys from GitHub. The configuration is stored under ```~/.lockpick/config.yml```
