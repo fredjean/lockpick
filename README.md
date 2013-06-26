@@ -1,6 +1,8 @@
 # Lockpick
 
-Allowing SSH access to the members of a GitHub team. 
+Allowing SSH access to the members of a GitHub team.
+
+![lockpick bizcard](http://dojo4.com/system/uploads/51cb4c82c8f9f0ed54000002/large/lockpick.jpg)
 
 ## Overview
 
